@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;360;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .sumNew{
+        text-shadow: 2px 2px #000
+    }
+    .textBlack{
+        text-shadow: 
+        -2px 2px 0 #FFFFFF,
+        2px 2px 0 #FFFFFF,
+        2px -2px 0 #FFFFFF,
+        -2px -2px 0 #FFFFFF;
+    }
+    .neonText{
+        text-shadow: 0 0 3px #fff, 0 0 5px #E69900,0 0 10px #E69900,0 0 14px #E69900,0 0 28px #FFC34D;
+    }
+    .sumNewNew{
+        box-shadow: 3px 3px white, -3px -3px white
+    }
+}
+
