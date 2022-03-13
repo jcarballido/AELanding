@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "16.13.1"
+  },
   "scripts": {
     "serve": "webpack serve --config webpack.dev.js",
-    "build":"webpack --config webpack.prod.js"
+    "start":"webpack --config webpack.prod.js"
   },
   "keywords": [],
   "author": "",
