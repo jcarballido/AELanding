@@ -41,8 +41,9 @@ module.exports = {
 	plugins:[
 		new MiniCssExtractPlugin({filename:"tailwind.css",}), 
 		new HtmlWebpackPlugin({
-			title:'Layout Template',
-			template: './src/index.html'
+			title:'Avocado Express',
+			template: './src/index.html',
+			favicon:'./favicon_avocado.svg'
 		})
 	]
 }
