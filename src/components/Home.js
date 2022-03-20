@@ -12,6 +12,7 @@ const mapsURL =' https://goo.gl/maps/XrBGSmzsy28upT2s9'
 const number = 'tel:+1-847-782-0794' 
 const googleLink = 'https://www.google.com/maps/place/Avocado+Express/@42.359642,-87.8694588,17z/data=!4m7!3m6!1s0x880f92ba2a3ba2bb:0xf43a215bd114379e!8m2!3d42.359641!4d-87.8673495!9m1!1b1'
 const yelpLink = 'https://www.yelp.com/biz/avocado-express-waukegan-3'
+const FBLink = 'https://www.facebook.com/pages/category/Cafe/Avocado-Express-Cafe-444099352359379/'
 
 const Hours = () => {
     return(
@@ -50,15 +51,15 @@ const Location = () => {
 
 const ExtLinks = () => {
     return (
-        <span className='w-full flex relative items-center text-sm mt-2 justify-between bg-white'>
+        <span className='w-full h-8 flex relative items-center text-base mt-2 justify-between bg-white'>
             <div className='flex items-center font-Paytone ml-2'>
                 SOCIAL
-                <img className='animate-bouncy h-4 mx-1' src={evilCorp} />
+                <a href={FBLink}><img className='animate-bouncy h-8 mx-1' src={evilCorp} /></a>
             </div>
             <div className='flex items-center font-Paytone'>
                 REVIEWS
-                <a href={yelpLink}><img className='animate-bouncy h-4 mx-1' src={yelp} /></a>
-                <a href={googleLink}><img className='animate-bouncy h-4 mx-1' src={google} /></a>
+                <a href={yelpLink}><img className='animate-bouncy h-8 mx-1' src={yelp} /></a>
+                <a href={googleLink}><img className='animate-bouncy h-8 mx-1' src={google} /></a>
             </div>
         </span>
 

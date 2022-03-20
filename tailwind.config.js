@@ -3,11 +3,16 @@ module.exports = {
   purge:{
     enabled: true,
     content: [
-      
       './src/**/*.js'],
   },
   theme: {
     extend: {
+      dropShadow:{
+        'left': '10px 0px 0px rgb(230, 153, 0)',
+        'right': '-10px 0px 0px rgb(230, 153, 0)',
+        'top': '0px 10px 0px rgb(230, 153, 0)',
+        'bottom': '0px -10px 0px rgb(230, 153, 0)'
+      },
       boxShadow: {
         'up':'0 -4px 0 0px rgba(0, 0, 0, 0.75)',
         'up-1':'0 -6px 0 0px rgba(0, 0, 0, 0.5)',

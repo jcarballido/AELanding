@@ -6,7 +6,11 @@ const Card = ({sectionItems}) => {
         <div className='bg-white pb-2 rounded-lg'>
             {sectionItems.map(section =>
                 <div className='m-2'>
-                    <div className='text-base font-bold'>{section.Item}{section.Price? ' / ':null}{section.Price}</div>
+                    <div className='text-base font-bold'>
+                        {section.Item}
+                        {section.Price? ' / ':null}
+                        <span className='text-red-700'>{section.Price}</span>
+                    </div>
                     <div className='text-xs italic'>{section.Choice? section.Choice:null}</div>
                     <div className='text-xs italic mb-1'>{section.ServedWith? section.ServedWith:null}</div>
                     <div className='text-sm leading-none'>{section.Includes? section.Includes:null}</div>
