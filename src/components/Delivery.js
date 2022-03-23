@@ -16,7 +16,7 @@ const Delivery = React.forwardRef((props, ref) => (
                         <img className='h-full ' src={UberEatsLogo} />
                     </a>
                     <a href={DDURL} className='w-1/2 flex items-center justify-center borderITHINK'>
-                        <img className='w-full rounded-2xl filter drop-shadow-3xl' src={DoorDashLogo} />
+                        <img className='w-full rounded-2xl filter drop-shadow-3xl md:w-1/3' src={DoorDashLogo} />
                     </a>
                 </div>
             </div>

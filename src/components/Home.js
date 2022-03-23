@@ -51,7 +51,7 @@ const Location = () => {
 
 const ExtLinks = () => {
     return (
-        <span className='w-full h-8 flex relative items-center text-base mt-2 justify-between bg-white'>
+        <span className='w-full h-8 flex relative items-center text-base mt-2 justify-between md:bg-transparent'>
             <div className='flex items-center font-Paytone ml-2'>
                 SOCIAL
                 <a href={FBLink}><img className='animate-bouncy h-8 mx-1' src={evilCorp} /></a>
@@ -68,10 +68,10 @@ const ExtLinks = () => {
 
 const Home = React.forwardRef((props, ref) => (
         <div id={props.id} ref={ref} className='w-full h-full flex flex-col bg-gradient-to-tr from-deep-orange to-daisy justify-start items-center' name='Home'>
-            <img className='h-1/10 mt-4 animate-powerUp' src={logo} />
+            <img className='h-15 mt-4 animate-powerUp' src={logo} />
             <span className='text-xs'>EST. 2014</span>
             <ExtLinks />
-            <img className='h-1/3 w-full mt-2 mb-4' src={interior} />
+            <img className='h-1/3 w-full mt-2 mb-4 sm:w-2/3 h-1/2' src={interior} />
             <div className='h-3/10 text-base flex flex-col gap-y-4 justify-center items-center'>
                 <Hours />
                 <div className='flex gap-x-6'>
