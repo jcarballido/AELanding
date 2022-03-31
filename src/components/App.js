@@ -49,8 +49,8 @@ const App = () => {
     }, [])
 
     return (
-        <div className='w-full h-screen'>
-            <div className='h-9/10'>
+        <div className='w-full h-screen sm:relative'>
+            <div className='h-9/10 sm:h-screen sm:relative'>
                 <Home id='home' ref={homeRef}/>
                 <Menu id='menu' ref={menuRef}/>
                 <Delivery id='delivery' ref={deliveryRef}/>

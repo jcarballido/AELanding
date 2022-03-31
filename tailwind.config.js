@@ -17,6 +17,7 @@ module.exports = {
         'up':'0 -4px 0 0px rgba(0, 0, 0, 0.75)',
         'up-1':'0 -6px 0 0px rgba(0, 0, 0, 0.5)',
         'up-2':'0px -10px 10px -2px #696969',
+        'up-3':'0px 5px 8px -8px #696969',
         'neonUp': '0 0 7px #fff,0 0 10px #fff,0 0 21px #fff,0 0 42px #0fa,0 0 82px #0fa,0 0 92px #0fa,0 0 102px #0fa,0 0 151px #0fa',
         'neonGlow': '0 0 3px #E69900,0 0 5px #E69900,0 0 10px #E69900,0 0 20px #FFC34D',
         'neon': '0 0 3px #fff, 0 0 5px #E69900,0 0 10px #E69900,0 0 14px #E69900,0 0 28px #FFC34D',      
@@ -113,6 +114,9 @@ module.exports = {
       },
       translate:{
         '6/3':'200%'
+      },
+      zIndex:{
+        '-10':'-10'
       }
     }
   },

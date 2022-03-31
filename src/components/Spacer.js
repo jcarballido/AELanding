@@ -2,7 +2,7 @@ import React,{ useState } from 'react';
 
 const Spacer = () => {
     return(
-        <div className='h-1/10 w-full bg-black'></div>
+        <div className='h-1/10 w-full bg-black sm:h-0'></div>
     )
 }
 
