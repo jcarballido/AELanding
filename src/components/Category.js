@@ -8,8 +8,6 @@ const Card = ({sectionItems}) => {
                 <div className='m-2'>
                     <div className='text-base font-bold'>
                         {section.Item}
-                        {section.Price? ' / ':null}
-                        <span className='text-red-700'>{section.Price}</span>
                     </div>
                     <div className='text-xs italic'>{section.Choice? section.Choice:null}</div>
                     <div className='text-xs italic mb-1'>{section.ServedWith? section.ServedWith:null}</div>
@@ -31,7 +29,7 @@ const Category = ({sectionName, sectionItems}) => {
 
     return(
         <div className='w-9/10'>
-            <div onClick={()=>setVisibility(!visible)} className='w-full h-8 flex justify-evenly bg-red-700 text-2xl rounded-2xl'>
+            <div onClick={()=>setVisibility(!visible)} className='w-full h-8 flex justify-evenly bg-red-700 text-2xl rounded-2xl sm:h-10'>
                 <div className='w-1/6' />
                 <div className='w-2/3 flex justify-center items-center text-white text-base font-Paytone sumNew'>
                     {sectionName}
