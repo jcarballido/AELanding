@@ -7,7 +7,7 @@ const DDURL = 'https://www.doordash.com/store/avocado-express-waukegan-445732/'
 
 const Delivery = React.forwardRef((props, ref) => (
         <div id={props.id} ref={ref} className=' bg-black flex flex-col justify-center items-center'>
-            <div className='bg-black m-4 rounded-lg shadow-neon sm:w-3/4'>
+            <div className='bg-black m-4 rounded-lg sm:w-3/4'>
                 <div className='flex justify-center font-Paytone text-2xl text-white pt-2 neonText sm:text-3xl'>
                         GET IT DELIVERED!
                 </div>

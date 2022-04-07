@@ -6,11 +6,11 @@ const Card = ({sectionItems}) => {
         <div className='bg-white pb-2 rounded-lg'>
             {sectionItems.map(section =>
                 <div className='m-2'>
-                    <div className='text-base font-bold'>
+                    <div className='text-base font-bold md:text-xl'>
                         {section.Item}
                     </div>
-                    <div className='text-xs italic'>{section.Choice? section.Choice:null}</div>
-                    <div className='text-xs italic mb-1'>{section.ServedWith? section.ServedWith:null}</div>
+                    <div className='text-xs md:text-base italic'>{section.Choice? section.Choice:null}</div>
+                    <div className='text-xs md:text-base italic mb-1'>{section.ServedWith? section.ServedWith:null}</div>
                     <div className='text-sm leading-none'>{section.Includes? section.Includes:null}</div>
                     {section.Image? 
                     <div className='flex justify-center items-center my-4'>
@@ -29,9 +29,9 @@ const Category = ({sectionName, sectionItems}) => {
 
     return(
         <div className='w-9/10'>
-            <div onClick={()=>setVisibility(!visible)} className='w-full h-8 flex justify-evenly bg-red-700 text-2xl rounded-2xl sm:h-10'>
+            <div onClick={()=>setVisibility(!visible)} className='w-full h-8 flex justify-evenly bg-red-700 text-2xl rounded-2xl sm:h-10 md:h-14'>
                 <div className='w-1/6' />
-                <div className='w-2/3 flex justify-center items-center text-white text-base font-Paytone sumNew'>
+                <div className='w-2/3 flex justify-center items-center text-white text-base font-Paytone sumNew md:text-2xl'>
                     {sectionName}
                 </div> 
                 <div className='w-1/6 text-base text-whiteflex justify-center p-1 pr-4 flex flex-col items-center'>

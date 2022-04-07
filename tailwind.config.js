@@ -7,6 +7,15 @@ module.exports = {
   },
   theme: {
     extend: {
+      minHeight:{
+        '9/10':'90%'
+      },
+      maxWidth: {
+        '1/3':'33.3%',
+        '190':'190px',
+        '450':'450px',
+        '300':'300px'
+      },
       dropShadow:{
         'left': '10px 0px 0px rgb(230, 153, 0)',
         'right': '-10px 0px 0px rgb(230, 153, 0)',
@@ -97,7 +106,8 @@ module.exports = {
         '4/10':'40%',
         '1/25':'4%',
         '3/10':'30%',
-        '15':'15%'
+        '15':'15%',
+        '1/5':'20%'
       },
       colors:{
         'deep-orange':'#f58220',
