@@ -9,9 +9,9 @@ const Card = ({sectionItems}) => {
                     <div className='text-base font-bold md:text-xl'>
                         {section.Item}
                     </div>
-                    <div className='text-xs md:text-base italic'>{section.Choice? section.Choice:null}</div>
-                    <div className='text-xs md:text-base italic mb-1'>{section.ServedWith? section.ServedWith:null}</div>
-                    <div className='text-sm leading-none'>{section.Includes? section.Includes:null}</div>
+                    <div className='text-xs md:text-lg italic'>{section.Choice? section.Choice:null}</div>
+                    <div className='text-xs md:text-lg italic mb-1'>{section.ServedWith? section.ServedWith:null}</div>
+                    <div className='text-sm md:text-lg leading-none'g>{section.Includes? section.Includes:null}</div>
                     {section.Image? 
                     <div className='flex justify-center items-center my-4'>
                         <div className='max-w-max shadow-neon rounded-lg'>

@@ -76,7 +76,7 @@ const Home = React.forwardRef((props, ref) => (
                 <span className='text-xs md:text-lg'>EST. 2014</span>
             </div>
             <ExtLinks />
-            <img className='h-1/3 w-full  mt-2 mb-4 max-w-450 sm:rounded-lg sm:mt-24 sm:h-4/10 sm:w-2/3 md:mt-36' src={interior} />
+            <img className='h-1/3 w-full mt-2 mb-4 max-w-450 sm:rounded-lg sm:mt-24 sm:h-4/10 sm:w-2/3 md:max-w-none md:mt-36 xl:max-w-xl xl:max-h-xl xl:max-w-800 xl:max-h-500' src={interior} />
             <div className='text-base w-full max-h-max grid grid-rows-2 grid-cols-6 gap-y-4 justify-center items-center sm:w-full sm:grid-cols-6 md:h-1/3 md:gap-x-8 md:flex-row md:mt-6 md:grid-rows-2 md:grid-cols-6'>
                 <Hours />
                 <Location />

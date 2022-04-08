@@ -8,15 +8,15 @@ const DDURL = 'https://www.doordash.com/store/avocado-express-waukegan-445732/'
 const Delivery = React.forwardRef((props, ref) => (
         <div id={props.id} ref={ref} className=' bg-black flex flex-col justify-center items-center'>
             <div className='bg-black m-4 rounded-lg sm:w-3/4'>
-                <div className='flex justify-center font-Paytone text-2xl text-white pt-2 neonText sm:text-3xl'>
+                <div className='flex justify-center font-Paytone text-2xl text-white pt-2 neonText sm:text-3xl md:text-4xl'>
                         GET IT DELIVERED!
                 </div>
-                <div href={UEURL} className='max-h-max flex justify-around pt-2 pb-2 sm:justify-center sm:gap-8' name='Delivery'>
-                    <a href={UEURL} className='max-w-max py-2 rounded-xl borderITHINK'>
-                        <img className='h-full ' src={UberEatsLogo} />
+                <div href={UEURL} className='max-h-max flex justify-around pt-2 pb-2 sm:justify-center sm:gap-8 md:gap-16 md:max-h-md md:max-h-none' name='Delivery'>
+                    <a href={UEURL} className='max-w-max py-2 rounded-xl borderITHINK md:h-28'>
+                        <img className='h-full' src={UberEatsLogo} />
                     </a>
-                    <a href={DDURL} className='w-1/2 flex items-center justify-center borderITHINK sm:w-1/3'>
-                        <img className='w-full rounded-2xl filter drop-shadow-3xl sm:w-full' src={DoorDashLogo} />
+                    <a href={DDURL} className='w-1/2 flex items-center justify-center borderITHINK sm:w-1/3 md:w-1/2 lg:max-w-300'>
+                        <img className='w-full rounded-2xl filter drop-shadow-3xl' src={DoorDashLogo} />
                     </a>
                 </div>
             </div>
