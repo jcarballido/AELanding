@@ -8,7 +8,7 @@ const Footer = () => {
                 <a className='w-full flex justify-center text-md sm:text-xl lg:w-1/4'>AVOCADO EXPRESS</a>
                 <a href='tel:+1-847-782-0794' className='w-full flex justify-center text-sm sm:text-lg lg:w-1/4'>(847) 782-0794</a>
                 <a href='https://goo.gl/maps/XrBGSmzsy28upT2s9' className='flex flex-row justify-center text-sm sm:text-lg lg:flex-col lg:w-1/4 lg:items-center'>2632 Washington Street, <span>Waukegan IL, 60085</span></a>
-                <div className='pb-4 lg:flex lg:justify-center lg:w-1/4'>
+                <div className='pb-4 lg:flex lg:justify-centerng lg:w-1/4'>
                     <a className='text-xs sm:text-sm lg:text-lg flex flex-row justify-center' onClick={() => scroll.scrollToTop()}>Back to the top</a>
                 </div>
             </div>
