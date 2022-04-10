@@ -5,6 +5,7 @@ import Menu from './Menu';
 import Footer from './Footer';
 import Delivery from './Delivery';
 import Spacer from './Spacer';
+import HttpsRedirect from 'react-https-redirect'
 
 const App = () => {
     const homeRef = useRef()
@@ -49,16 +50,18 @@ const App = () => {
     }, [])
 
     return (
-        <div className='w-full h-screen sm:relative'>
-            <div className='h-9/10 sm:h-screen sm:relative'>
-                <Home id='home' ref={homeRef}/>
-                <Menu id='menu' ref={menuRef}/>
-                <Delivery id='delivery' ref={deliveryRef}/>
-                <Footer />
-                <Spacer />
+        <HttpsRedirect>
+            <div className='w-full h-screen sm:relative'>
+                <div className='h-9/10 sm:h-screen sm:relative'>
+                    <Home id='home' ref={homeRef}/>
+                    <Menu id='menu' ref={menuRef}/>
+                    <Delivery id='delivery' ref={deliveryRef}/>
+                    <Footer />
+                    <Spacer />
+                </div>
+                <Nav sectionsVisible={secViz}/>
             </div>
-            <Nav sectionsVisible={secViz}/>
-        </div>
+        </HttpsRedirect>
     );
 };
 
